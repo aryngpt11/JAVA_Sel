@@ -25,7 +25,7 @@ public class ListofItemsAdded {
             if (itemsneeded.contains(formattedName)) {
                 j++;
                 driver.findElements(By.xpath("//div[@class='product-action']")).get(i).click();
-                if (j==3){
+                if (j==itemsneeded.size()){
                     break;
                 }
 
