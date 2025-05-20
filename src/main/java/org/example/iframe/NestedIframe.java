@@ -15,8 +15,12 @@ public class NestedIframe {
 
         driver.findElement(By.xpath("//a[normalize-space()='Iframe with in an Iframe']")).click();
 
-        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='MultipleFrames.html']")));
-        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='SingleFrame.html']")));
+        //driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='MultipleFrames.html']")));
+        //driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='SingleFrame.html']")));
+        System.out.println(driver.findElements(By.tagName("iframe")).size());
+        driver.switchTo().frame(1);
+        driver.switchTo().frame(2);
+
 
         WebElement ip=driver.findElement(By.xpath("//input[@type='text']"));
         ip.sendKeys("asdfghj");
