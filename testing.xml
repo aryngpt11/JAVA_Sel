@@ -18,6 +18,18 @@
         </classes>
     </test>
 
+
+    <test name="New Loan">
+        <classes>
+            <class name="TestNGIntro.ReegExpree">
+                <methods>
+                    <exclude name="Mobile.*" />
+                    <!-- Excluding the MobileloginCarLoan method from execution using regular expression -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
     <test name="Home Loan">
         <classes>
             <class name="TestNGIntro.Day4">
