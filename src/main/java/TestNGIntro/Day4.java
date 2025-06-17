@@ -1,5 +1,6 @@
 package TestNGIntro;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class Day4 {
@@ -7,6 +8,8 @@ public class Day4 {
     public void WebloginHomeLoan(){
         System.out.println("webloginHome");
     }
+
+
 
     @Test
     public void MobileloginHomeLoan(){

@@ -1,5 +1,6 @@
 package TestNGIntro;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Day3 {
@@ -12,6 +13,10 @@ public class Day3 {
     @Test
     public void MobileloginCarLoan(){
         System.out.println("mobilelogincar");
+    }
+    @BeforeMethod
+    public void BFmtd(){
+        System.out.println(" i m beforemethod");
     }
 
     @Test

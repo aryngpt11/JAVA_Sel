@@ -3,8 +3,12 @@
 <suite name="MySuite">
     <test name="BasicsTest">
         <classes>
-            <class name="TestNGIntro.Basics" />
-            <class name="TestNGIntro.LoginORM"></class>
+            <class name="TestNGIntro.Basics" >
+                <methods>
+                    <exclude name="SecondTest"/>
+                </methods>
+            </class>
+<!--            <class name="TestNGIntro.LoginORM"/>-->
         </classes>
     </test>
     <test name="Car Loan">

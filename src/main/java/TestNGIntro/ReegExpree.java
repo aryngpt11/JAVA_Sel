@@ -1,5 +1,7 @@
 package TestNGIntro;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class ReegExpree {
@@ -11,6 +13,15 @@ public class ReegExpree {
     @Test
     public void MobileloginCarLoan(){
         System.out.println("mobilelogincar");
+    }
+
+    @BeforeSuite
+    public void BFsuite(){
+        System.out.println("I m beforesuite");
+    }
+    @AfterMethod
+    public void AFmtd(){
+        System.out.println("I m after method");
     }
 
     @Test
