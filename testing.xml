@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite">
+    <test name="BasicsTest">
+        <classes>
+            <class name="TestNGIntro.Basics" />
+            <class name="TestNGIntro.LoginORM"></class>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="TestNGIntro.Day3">
+                <methods>
+                    <exclude name="MobileloginCarLoan" />
+                    <!-- Excluding the MobileloginCarLoan method from execution -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Home Loan">
+        <classes>
+            <class name="TestNGIntro.Day4">
+                <methods>
+                    <include name="LoginAPIHomeLoan"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
