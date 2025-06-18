@@ -1,10 +1,16 @@
 package TestNGIntro;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class Day4 {
-    @Test
+
+    @AfterClass
+    public void aftclass(){
+        System.out.println("i m after class");
+    }
+    @Test(groups={"Smoke"})
     public void WebloginHomeLoan(){
         System.out.println("webloginHome");
     }
