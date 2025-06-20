@@ -9,8 +9,8 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGIntro.Day3" />
-            <class name="TestNGIntro.Day4"/>
+<!--            <class name="TestNGIntro.Day3" />-->
+<!--            <class name="TestNGIntro.Day4"/>-->
             <class name="TestNGIntro.Groupannoate"/>
             <class name="TestNGIntro.Basics"/>
 

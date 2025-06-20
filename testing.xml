@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="MySuite">
+<suite name="MySuite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="TestNGIntro.Listeners"/>
+    </listeners>
+    <parameter name="URL" value="qaclickacademy.com"/>
     <test name="BasicsTest">
+        <parameter name="URL" value="basicstest.com"/>
+        <parameter name="apikey" value="123456"/>
         <classes>
             <class name="TestNGIntro.Basics" >
                 <methods>
@@ -35,7 +41,10 @@
     </test>
 
     <test name="Home Loan">
+        <parameter name="URL" value="Homeloan.com"/>
+        <parameter name="apikey" value="987654321"/>
         <classes>
+
             <class name="TestNGIntro.Day4">
                 <methods>
                     <include name="LoginAPIHomeLoan"/>
